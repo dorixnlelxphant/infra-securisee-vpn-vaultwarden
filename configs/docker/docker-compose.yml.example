@@ -1,0 +1,17 @@
+# /opt/vaultwarden/docker-compose.yml  (exemple)
+
+version: "3.8"
+
+services:
+  vaultwarden:
+    image: vaultwarden/server:latest
+    container_name: vaultwarden
+    restart: unless-stopped
+    environment:
+      WEBSOCKET_ENABLED: "true"
+      SIGNUPS_ALLOWED:    "true"      # à passer sur "false" après création des comptes
+      DOMAIN:             "http://10.66.66.1"
+    volumes:
+      - ./vw-data:/data
+    ports:
+      - "127.0.0.1:8080:80"          # écoute locale uniquement

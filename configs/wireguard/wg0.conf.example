@@ -1,0 +1,18 @@
+# /etc/wireguard/wg0.conf  (exemple — valeurs à remplacer)
+
+[Interface]
+# --- Configuration du Serveur ---
+Address    = 10.66.66.1/24
+ListenPort = 51820
+PrivateKey = <CLE_PRIVEE_SERVEUR>
+SaveConfig = false
+MTU        = 1420
+
+# --- Forwarding IP (routage) ---
+PostUp   = sysctl -w net.ipv4.ip_forward=1; ufw route allow in on wg0 out on ens6
+PostDown = sysctl -w net.ipv4.ip_forward=0; ufw route delete allow in on wg0 out on ens6
+
+[Peer]
+# --- Configuration du Client ---
+PublicKey  = <CLE_PUBLIQUE_CLIENT>
+AllowedIPs = 10.66.66.2/32
