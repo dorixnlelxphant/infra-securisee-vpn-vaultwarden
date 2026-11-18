@@ -18,18 +18,6 @@ Mise en place complète d'une infrastructure sécurisée sur un serveur Linux ex
 
 ## 🧱 Architecture
 
-```
-                    ┌──────────────────────── VPS (Debian) ────────────────────────┐
-   Client           │                                                              │
-  ┌───────┐  VPN    │  ┌──────────┐   ┌──────────┐   ┌──────────────────────────┐  │
-  │WireGuard├───────┼──┤   UFW    ├───┤  Nginx   ├───┤  Vaultwarden (Docker)    │  │
-  │ client │ chiffré│  │ pare-feu │   │ HTTPS/TLS│   │  127.0.0.1:8080          │  │
-  └───────┘         │  └────┬─────┘   └──────────┘   └──────────────────────────┘  │
-                    │       │ Port knocking (knockd) → ouvre le port SSH            │
-                    └───────┼──────────────────────────────────────────────────────┘
-                            │
-              Sauvegardes 3-2-1 :  Locale (VPS) ─ Distante (rsync/SSH) ─ Cloud (MEGA)
-```
 
 > Schéma détaillé : [`docs/architecture.md`](docs/architecture.md)
 
