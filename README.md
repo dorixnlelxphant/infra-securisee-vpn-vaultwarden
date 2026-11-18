@@ -18,7 +18,7 @@ Mise en place complète d'une infrastructure sécurisée sur un serveur Linux ex
 
 ## 🧱 Architecture
 
-> Documentation Technique dossier E6 : [`docs/Dossier_E6_Dorian-PONSADA-infra-securisee-vpn-vaultwarden.pdf`](docs/Dossier_E6_Dorian-PONSADA-infra-securisee-vpn-vaultwarden.pdf)
+> Annexe 7a dossier E6 : [`docs/Dossier_E6_Dorian-PONSADA-infra-securisee-vpn-vaultwarden.pdf`](docs/Dossier_E6_Dorian-PONSADA-infra-securisee-vpn-vaultwarden.pdf)
 
 > Schéma détaillé : [`docs/architecture.md`](docs/architecture.md)
 
@@ -46,7 +46,8 @@ Mise en place complète d'une infrastructure sécurisée sur un serveur Linux ex
 ├── docs/                         # Documentation détaillée
 │   ├── architecture.md           # Schéma & plan d'adressage
 │   ├── installation.md           # Procédure d'installation complète
-│   └── sauvegarde-3-2-1.md       # Politique & procédure de restauration
+│   ├── sauvegarde-3-2-1.md       # Politique & procédure de restauration
+│   └── Dossier_E6_Dorian-PONSADA-infra-securisee-vpn-vaultwarden.pdf       # Annexe 7a Fiche descriptive du projet
 ├── configs/                      # Fichiers de configuration (exemples sanitisés)
 │   ├── wireguard/wg0.conf.example
 │   ├── knockd/knockd.conf.example
