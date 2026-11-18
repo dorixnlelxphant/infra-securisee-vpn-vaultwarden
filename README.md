@@ -18,6 +18,7 @@ Mise en place complète d'une infrastructure sécurisée sur un serveur Linux ex
 
 ## 🧱 Architecture
 
+> Documentation Technique dossier E6 : [`docs/Dossier_E6_Dorian-PONSADA-infra-securisee-vpn-vaultwarden.pdf`](docs/Dossier_E6_Dorian-PONSADA-infra-securisee-vpn-vaultwarden.pdf)
 
 > Schéma détaillé : [`docs/architecture.md`](docs/architecture.md)
 
@@ -78,8 +79,6 @@ Mise en place complète d'une infrastructure sécurisée sur un serveur Linux ex
 - Tests de restauration (intégrité des données) → OK
 
 ---
-
-> ⚠️ **Note de sécurité** — Les adresses IP, noms de domaine, séquences de port knocking et clés présents dans ce dépôt sont **anonymisés / génériques**. Aucune donnée réelle d'infrastructure n'est exposée.
 
 ## 👤 Auteur
 
